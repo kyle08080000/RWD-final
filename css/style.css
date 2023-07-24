@@ -57,6 +57,9 @@ img{
     margin-right: 30px;
 }
 
+body{
+    background-color: #EFE9E7;
+}
 .wrap{
     max-width: 1025px;
     margin: 0 auto;
@@ -72,8 +75,9 @@ img{
     right: 0;
     z-index: 100;
 }
+
+
 .logo{
-    /* border: 1px solid red; */
     background-image: url(../img/logo_w@svg.svg);
     background-size: contain;
     float: left;
@@ -92,6 +96,8 @@ img{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    margin-right: 42px;
+
 }
 .menu > li > a,
 .submenu > li > a{
@@ -101,13 +107,20 @@ img{
     color: #fff;
     padding: 18px 48px;
 }
+.first-submenu{
+    border-top: 1px dashed #fff;
+}
 .submenu > li > a{
-    /* border-left: 1px solid #000; */
-    /* border-right: 1px solid #000; */
-    border-bottom: 1px solid #000;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    padding: 18px 48px;
+}
+.submenu > li > a:hover{
     background-color: #fff;
     color: #000;
-    padding: 18px 48px;
 }
 .submenu{
     height: 0px;
@@ -138,8 +151,6 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
-    
 }
 .bg{
     max-width: 100%;
@@ -202,7 +213,6 @@ h5{
 .footer-connection > ul > li > a{
     color: #3D1101;
     text-decoration: none;
-    margin-left: -10px;
 }
 .footer-connection > ul > li{
     margin-bottom: 5px;
@@ -260,6 +270,10 @@ h5{
         top: 0;
         left: 50%;
         transform: translate(-50%,0%);
+    }
+    .banner{
+        background-image: url(../img/header_mobile.png);
+        background-position: -100px;
     }
     .banner > .banner-box{
         max-width: 90%;
