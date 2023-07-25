@@ -84,6 +84,11 @@ a{
     height: 32px;
     background: #EFE9E7;
     border: 3px solid #3D1101;
+
+}
+input:focus {
+    outline: 2px solid #D43545;
+    
 }
 .fa-search:before{
     color: #fff;
@@ -250,6 +255,9 @@ a{
     border: none;
     background: none;
     color: #fff;
+}
+.product-card__favorite-button:hover{
+    color: #D43545;
 }
 @media(max-width: 767px){
     .product-block{
