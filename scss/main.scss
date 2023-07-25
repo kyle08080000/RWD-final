@@ -76,7 +76,7 @@
       a {
          transition: all .15s;
          text-decoration: none ;
-         font-size: 2.3em;
+         font-size: 1.5em;
          color: #fff;
          display:block;
          &:hover {
@@ -102,6 +102,8 @@
    }
    .header{
       height: 10%;
+      display: flex;
+      justify-content: space-between;
    }
    .logo{
       margin-top: 6.5%;
