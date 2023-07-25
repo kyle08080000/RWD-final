@@ -142,6 +142,23 @@ a{
         margin-right: 2%;
     }
 }
+@media(max-width: 767px){
+    .the-secret > .line{
+        width: 88%;
+    }
+    .secret > .container{
+        display: block;
+        float: left;
+        margin: 0;
+        padding-bottom: 7%;
+    }
+    .the-secret-item{
+        width: 90%;
+        margin-left: 6%;
+        margin-bottom: 8%;
+    }
+}
+
 
 
 .introduction{
@@ -190,17 +207,30 @@ a{
         margin: 5% 4% 0 0;
     }
 }
-
-
-
-.evaluate{
-    padding-top: 50px;
-    clear: both;
+@media(max-width: 767px){
+    .chaf-img{
+        width: 100%;
+        background-position: 90%;
+        margin-left: 0;
+    }
+    .introduction > .container{
+        width: 100%;
+        margin: 0;
+        padding: 6%;
+    }
 }
-.evaluate > h3{
+
+.share-ideas{
+    clear: both;
+    padding-top: 50px;
+}
+.share-ideas > h3{
     text-align: center;
     font-size: 32px;
-    margin-bottom: 32px;
+}
+.evaluate{
+    padding-top: 32px;
+    clear: both;
 }
 .evaluate > .container{
     margin: 0 42px;
@@ -252,14 +282,33 @@ a{
     .evaluate-item{
         margin-right: 0;
     }
-    .evaluate-item > a{
-        
-    }
     .leave-message{
         width: 70.3333%;
     }
 }
-
+@media(max-width: 767px){
+    .evaluate{
+        overflow-x: auto;
+    }
+    .evaluate > .container{
+        justify-content: space-evenly;
+        width: 1000px;
+        margin: 0;
+    }
+    .evaluate-item{
+        width: 100%;
+        margin-left: 3%;
+        margin-right: 0;
+    }
+    .leave-message{
+        width: 65%;
+    }
+}
+@media(max-width: 320px){
+    .evaluate-item{
+        margin-left: 2%;
+    }
+}
 
 
 .booking{
@@ -343,5 +392,17 @@ a{
     .booking{
         padding-left: 1.5%;
         padding-right: 1.5%;
+    }
+}
+@media(max-width: 767px){
+    .booking{
+        padding: 13% 4%;
+    }
+    .booking > .container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reservation{
+        padding-top: 15%;
     }
 }
