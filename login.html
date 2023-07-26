@@ -89,14 +89,21 @@
                 </h2>
                 <form action="/login" method="post">
                     <h3>Login</h3>
-                    <label for="username">信箱*</label>
-                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="email">信箱*</label>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
                     
                     <label for="password">密碼*</label>
-                    <input type="password" id="password" name="password" required>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
                     
                     <!-- 錯誤訊息 -->
-                    <div id="error-message" style="color:red;"></div>
+                    <!-- <div id="error-message" style="color:red;"></div> -->
         
                     <!-- 忘記密碼連結 -->
                     <a class="forgot-password" href="/forgot-password">忘記密碼？</a>
