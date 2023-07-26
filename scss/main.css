@@ -89,10 +89,14 @@
   .menu-expanded .bar:after {
     transform: rotate(-45deg);
   }
+
+
+
   .header {
     height: 10%;
     /* display: flex;
     justify-content: space-between; */
+    /* padding-bottom: 10px; */
   }
   .logo {
     margin-top: 7%;

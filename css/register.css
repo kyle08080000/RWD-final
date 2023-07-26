@@ -115,7 +115,8 @@ input[type="password"]{
 }
 .submit-login-link button{
     width: 40%;
-    padding: 6px 0;
+    padding: 10px 0;
+    font-size: 16px;
     border: none;
     border-radius: 3px;
     background: #FF5E45;
