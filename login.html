@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="scss/main.css">
-    <title>漢堡-六角西餐廳</title>
+    <title>Login-漢堡-六角西餐廳</title>
 </head>
 <body>
     <div class="wrap">
@@ -38,13 +39,13 @@
                         <a class="fas fa-hamburger" href="#">線上訂餐</a>
                         <ul class="submenu">
                             <li class="first-submenu">
-                                <a href="#">超豪華套餐</a>
+                                <a href="cart.html">超豪華套餐</a>
                             </li>
                             <li>
-                                <a href="#">美式漢堡</a>
+                                <a href="cart.html">美式漢堡</a>
                             </li>
                             <li>
-                                <a href="#">紐約漢堡</a>
+                                <a href="cart.html">紐約漢堡</a>
                             </li>
                         </ul>
                     </li>
@@ -68,7 +69,7 @@
                 </ul>
             </div>
         </div>
-    
+
         <a class="banner" href="#">
             <div class="banner-box">
                 <div class="bg"></div>
@@ -79,8 +80,51 @@
                 </div>
             </div>
         </a>
+
         <div class="content">
-            ...
+            <div class="login-container">
+                <h2>
+                    六角西餐廳
+                    <span>享受美食好味道</span>
+                </h2>
+                <form action="/login" method="post">
+                    <h3>Login</h3>
+                    <label for="username">信箱*</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">密碼*</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <!-- 錯誤訊息 -->
+                    <div id="error-message" style="color:red;"></div>
+        
+                    <!-- 忘記密碼連結 -->
+                    <a class="forgot-password" href="/forgot-password">忘記密碼？</a>
+        
+                    <!-- 登入與註冊按鈕 -->
+                    <div class="submit-container">
+                        <a class="register" href="/register">註冊</a>
+                        <button type="submit">登入</button>
+                    </div>
+                    <div class="or">
+                        <span>or</span>
+                        <hr class="login__divider">
+                    </div>
+                    <!-- 社交媒體登入按鈕 -->
+                    <div class="social-login">
+
+                        <a href="/login-with-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="/login-with-google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="/login-with-twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="footer">
             <div class="footer-aboutUs">

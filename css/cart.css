@@ -305,5 +305,8 @@ input:focus {
     .product-card{
         padding-bottom: 40%;
     }
+    .product-card__name{
+        margin: 8% 0;
+    }
 }
 
