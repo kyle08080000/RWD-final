@@ -36,7 +36,7 @@
     background-color: #fff;
     position: fixed;
     right: 18px;
-    top: 32px;
+    top: 40px;
     z-index: 10;
   }
   .bar:before {
@@ -91,12 +91,12 @@
   }
   .header {
     height: 10%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
   }
   .logo {
-    margin-top: 6.5%;
-    margin-left: 6%;
+    margin-top: 7%;
+    margin-left: 5%;
   }
   .menu {
     display: flex;
@@ -166,4 +166,4 @@
   .menu-expanded .openMenu {
     height: 190px;
   }
-}/*# sourceMappingURL=main.css.map */
+}

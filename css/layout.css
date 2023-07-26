@@ -67,28 +67,35 @@ body{
 }
 
 .header{
-    height: 60px;
+    height: 65px;
     background: #000;
     position: fixed;
+    margin: 0;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
 }
-
+.header .container{
+    max-width: 1025px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 5px;
+}
 
 .logo{
     background-image: url(../img/logo_w@svg.svg);
     background-size: contain;
-    float: left;
     display: block;
     width: 120px;
     height: 24px;
-    margin-top: 16px;
-    margin-left: 42px;
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
 }
 
 .menu{
@@ -96,7 +103,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    font-weight: bold;
     margin-right: 10px;
 }
 .menu > li > a,
@@ -106,6 +112,9 @@ body{
     text-decoration: none;
     color: #fff;
     padding: 18px 20px;
+}
+.menu > li > a{
+    font-weight: bold;
 }
 .menu > li > a:hover{
     background: #fff;
@@ -145,7 +154,7 @@ body{
     height: 420px;
     text-decoration: none;
     color: #fff;
-    text-align: center;
+    text-align: center; 
     margin-top: 50px;
 }
 .banner > .banner-box{
@@ -265,6 +274,7 @@ h5{
 }
 
 @media(max-width:767px){
+
     .fas:before{
         margin-right: 5%;
     }
