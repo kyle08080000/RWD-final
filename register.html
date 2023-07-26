@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="scss/main.css">
-    <title>Login-漢堡-六角西餐廳</title>
+    <title>Register-漢堡-六角西餐廳</title>
 </head>
 <body>
     <div class="wrap">
@@ -82,49 +82,69 @@
         </a>
 
         <div class="content">
-            <div class="login-container">
+            
+            <div class="register-page">
                 <h2>
                     六角西餐廳
                     <span>享受美食好味道</span>
                 </h2>
-                <form action="/login" method="post">
-                    <h3>Login</h3>
-                    <label for="username">信箱*</label>
-                    <input type="text" id="username" name="username" required>
+            
+                <div class="register-container">
+                    <h3>Register</h3>
                     
-                    <label for="password">密碼*</label>
-                    <input type="password" id="password" name="password" required>
-                    
-                    <!-- 錯誤訊息 -->
-                    <div id="error-message" style="color:red;"></div>
-        
-                    <!-- 忘記密碼連結 -->
-                    <a class="forgot-password" href="/forgot-password">忘記密碼？</a>
-        
-                    <!-- 登入與註冊按鈕 -->
-                    <div class="submit-container">
-                        <a class="register" href="register.html">註冊</a>
-                        <button type="submit">登入</button>
-                    </div>
-                    <div class="or">
-                        <span>or</span>
-                        <hr class="login__divider">
-                    </div>
-                    <!-- 社交媒體登入按鈕 -->
-                    <div class="social-login">
+                    <form action="/register" method="post" id="registration-form">
+                        
+                        <!-- 服務條款區塊 -->
+                        <div class="terms-of-service">
+                            <h4>服務條款：</h4>
+                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien...</p>
+                            <div class="agree-checkbox">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">我已同意</label>
+                            </div>
+                        </div>
+            
+                        <!-- 註冊內容區塊 -->
+                        <div class="register-content">
+                            <!-- <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required> -->
+                            
+                            <label for="email">信箱*</label>
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            
+                            <label for="password">密碼*</label>
+                            <div class="input-group">
+                                <input type="password" id="password" name="password" required>
+                                <i class="fas fa-lock"></i>
+                            </div>
+            
+                            <label for="confirm-password">確認密碼*</label>
+                            <div class="input-group">
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        
+                            <!-- 錯誤訊息 -->
+                            <div id="error-message" style="color:red;"></div>
+                            
+                            <!-- 已有帳號登入連結 -->
+                            <div class="login">
+                                <a href="/login">已有帳號？</a>
+                            </div>
 
-                        <a href="/login-with-facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="/login-with-google">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="/login-with-twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </form>
+                            <!-- 提交按鈕與已有帳號登入連結 -->
+                            <div class="submit-login-link">
+                                <button type="submit">註冊</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+            
+
         </div>
         <div class="footer">
             <div class="footer-aboutUs">
