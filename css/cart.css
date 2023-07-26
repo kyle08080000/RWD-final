@@ -190,7 +190,7 @@ input:focus {
     background-color: #D43545;
     color: white;
     padding: 13px 5px 5px 5px;
-    box-shadow: 0 15px 10px 1px #898989;
+    box-shadow: 0 5px 10px 1px #383838;
 }
 .product-card__hot-sale::before{
     content: "";
