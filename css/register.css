@@ -89,6 +89,7 @@ a{
 }
 .login{
     margin-top: 10px;
+    color: #FF5E45;
 }
 .login a:hover{
     text-decoration: underline;
