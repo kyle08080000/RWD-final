@@ -89,6 +89,8 @@ a{
 }
 .login{
     margin-top: 10px;
+}
+.login a{
     color: #FF5E45;
 }
 .login a:hover{
